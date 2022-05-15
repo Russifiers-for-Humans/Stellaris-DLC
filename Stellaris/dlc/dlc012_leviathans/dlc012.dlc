@@ -1,0 +1,11 @@
+name = "Leviathans Story Pack"
+localizable_name = "DLC_LEVIATHANS"
+archive = "dlc/dlc012_leviathans/dlc012.zip"
+steam_id = 518910
+rail_id = 2000030
+pops_id = "leviathans"
+affects_checksum = no
+affects_compatability = yes
+checksum="fcd96ab12e626d8f4ded93f8739578e9"
+third_party_content = no
+category="story_pack"

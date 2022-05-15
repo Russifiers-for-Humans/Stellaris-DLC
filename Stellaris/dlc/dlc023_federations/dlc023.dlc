@@ -1,0 +1,11 @@
+name = "Federations"
+localizable_name = "DLC_FEDERATIONS"
+archive = "dlc/dlc023_federations/dlc023.zip"
+steam_id = 1140001
+rail_id = 0
+pops_id = "dlc023_federations"
+affects_checksum = no
+affects_compatability = yes
+checksum = "763269e38609b2ecb94837e2a9548452"
+third_party_content = no
+category = "expansion"

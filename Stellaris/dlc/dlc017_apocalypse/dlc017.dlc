@@ -1,0 +1,11 @@
+name = "Apocalypse"
+localizable_name = "DLC_APOCALYPSE"
+archive = "dlc/dlc017_apocalypse/dlc017.zip"
+steam_id = 716670
+rail_id = 0
+pops_id = "apocalypse"
+affects_checksum = no
+affects_compatability = yes
+checksum = "b243f85775eb41af621c61a55c7cb5b9"
+third_party_content = no
+category = "expansion"

@@ -1,0 +1,11 @@
+name = "Synthetic Dawn Story Pack"
+localizable_name = "DLC_SYNTHETIC_DAWN"
+archive = "dlc/dlc016_synthetic_dawn/dlc016.zip"
+steam_id = 642750
+rail_id = 0
+pops_id = "synthetic_dawn"
+affects_checksum = no
+affects_compatability = yes
+checksum = "9ec24632f36e94950611cf4eaa8b2e0e"
+third_party_content = no
+category = "story_pack"

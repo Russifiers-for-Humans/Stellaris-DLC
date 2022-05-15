@@ -1,0 +1,11 @@
+name = "Symbols of Domination"
+localizable_name = "DLC_SYMBOLS_OF_DOMINATION"
+archive = "dlc/dlc001_symbols_of_domination/dlc001.zip"
+steam_id = 447680
+rail_id = 2000027
+pops_id = "symbols_of_domination"
+affects_checksum = no
+affects_compatability = no
+checksum="a06d70f82803b72da709a290e4c48024"
+third_party_content = no
+category="content_pack"

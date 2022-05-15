@@ -1,0 +1,11 @@
+name = "Aquatics Species Pack"
+localizable_name = "DLC_AQUATICS_SPECIES"
+archive = "dlc/dlc026_aquatics/dlc026.zip"
+steam_id = 1749080
+rail_id = 0
+pops_id = "dlc026_aquatics"
+affects_checksum = no
+affects_compatability = yes
+checksum = "dbcdbcc0cdb2eed7103ab261dc1f2dc6"
+third_party_content = no
+category = "species_pack"

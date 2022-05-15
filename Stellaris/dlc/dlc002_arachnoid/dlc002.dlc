@@ -1,0 +1,12 @@
+name = "Arachnoid Portrait Pack"
+localizable_name = "DLC_ARACHNOID_PORTRAIT_PACK"
+#path = "dlc/dlc002_arachnoid"
+archive = "dlc/dlc002_arachnoid/dlc002.zip"
+steam_id = 447683
+rail_id = 2000025
+pops_id = "arachnoid"
+affects_checksum = no
+affects_compatability = no
+checksum="02342fa4dce8db8478412f140709aac4"
+third_party_content = no
+category="content_pack"

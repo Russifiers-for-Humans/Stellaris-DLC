@@ -1,0 +1,11 @@
+name = "Utopia"
+localizable_name = "DLC_UTOPIA"
+archive = "dlc/dlc014_utopia/dlc014.zip"
+steam_id = 553280
+rail_id = 0
+pops_id = "utopia"
+affects_checksum = no
+affects_compatability = yes
+checksum = "d77a755f9b21525be839387eebf42d6a"
+third_party_content = no
+category = "expansion"

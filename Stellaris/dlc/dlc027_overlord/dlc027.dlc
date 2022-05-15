@@ -1,0 +1,11 @@
+name = "Overlord"
+localizable_name = "DLC_OVERLORD"
+archive = "dlc/dlc027_overlord/dlc027.zip"
+steam_id = 1889490
+rail_id = 0
+pops_id = "dlc027_overlord"
+affects_checksum = no
+affects_compatability = yes
+checksum = "6946dcfba1243d8c38dc53fb064f586a"
+third_party_content = no
+category = "expansion"

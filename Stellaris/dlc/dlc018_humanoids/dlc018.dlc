@@ -1,0 +1,11 @@
+name = "Humanoids Species Pack"
+localizable_name = "DLC_HUMANOIDS_SPECIES"
+archive = "dlc/dlc018_humanoids/dlc018.zip"
+steam_id = 756010
+rail_id = 0
+pops_id = "humanoids"
+affects_checksum = no
+affects_compatability = yes
+checksum = "8d543e0c15dcccf65b08fa07a54f6d0f"
+third_party_content = no
+category = "species_pack"

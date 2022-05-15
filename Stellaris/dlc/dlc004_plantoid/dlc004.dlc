@@ -1,0 +1,11 @@
+name = "Plantoids Species Pack"
+localizable_name = "DLC_PLANTOIDS"
+archive = "dlc/dlc004_plantoid/dlc004.zip"
+steam_id = 498870
+rail_id = 2000029
+pops_id = "plantoid"
+affects_checksum = no
+affects_compatability = yes
+checksum="18237f05b202f471bd01a15aa6251fad"
+third_party_content = no
+category="species_pack"

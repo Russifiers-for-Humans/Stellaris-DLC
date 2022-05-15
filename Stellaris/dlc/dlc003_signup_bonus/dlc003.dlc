@@ -1,0 +1,12 @@
+name = "Paradox Account Sign-up Bonus"
+localizable_name = "DLC_SIGNUP_CAMPAIGN_BONUS"
+#path = "dlc/dlc003_signup_bonus"
+archive = "dlc/dlc003_signup_bonus/dlc003.zip"
+steam_id = 447681
+rail_id = 2000028
+pops_id = "signup_bonus"
+affects_checksum = no
+affects_compatability = no
+checksum="f47f2b21bfb5c59f6ff1863b06609b63"
+third_party_content = no
+category="content_pack"

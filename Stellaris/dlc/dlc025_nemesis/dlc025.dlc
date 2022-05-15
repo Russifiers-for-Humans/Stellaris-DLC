@@ -1,0 +1,11 @@
+name = "Nemesis"
+localizable_name = "DLC_NEMESIS"
+archive = "dlc/dlc025_nemesis/dlc025.zip"
+steam_id = 1522090
+rail_id = 0
+pops_id = "dlc025_nemesis"
+affects_checksum = no
+affects_compatability = yes
+checksum = "456698df52110c14f8abff486ed411d8"
+third_party_content = no
+category = "expansion"

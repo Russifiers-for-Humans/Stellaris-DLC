@@ -1,0 +1,11 @@
+name = "Distant Stars Story Pack"
+localizable_name = "DLC_DISTANT_STARS"
+archive = "dlc/dlc019_distant_stars/dlc019.zip"
+steam_id = 844810
+rail_id = 0
+pops_id = "distant_stars"
+affects_checksum = no
+affects_compatability = yes
+checksum = "3364a21da30c089b2f818883c22d208e"
+third_party_content = no
+category = "story_pack"

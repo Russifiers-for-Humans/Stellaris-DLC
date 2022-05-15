@@ -1,0 +1,11 @@
+name = "Ancient Relics Story Pack"
+localizable_name = "DLC_ANCIENT_RELICS"
+archive = "dlc/dlc021_ancient_relics/dlc021.zip"
+steam_id = 1045980
+rail_id = 0
+pops_id = "dlc021_ancient_relics"
+affects_checksum = no
+affects_compatability = yes
+checksum = "a294a465f80e7fc14e45438144132846"
+third_party_content = no
+category = "story_pack"

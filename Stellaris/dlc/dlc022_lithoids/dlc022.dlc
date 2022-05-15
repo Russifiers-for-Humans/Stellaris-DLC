@@ -1,0 +1,11 @@
+name = "Lithoids Species Pack"
+localizable_name = "DLC_LITHOIDS_SPECIES"
+archive = "dlc/dlc022_lithoids/dlc022.zip"
+steam_id = 1140000
+rail_id = 0
+pops_id = "dlc022_lithoids"
+affects_checksum = no
+affects_compatability = yes
+checksum = "8e7c0d1215c795d15bdd4a7920b34149"
+third_party_content = no
+category = "species_pack"

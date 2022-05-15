@@ -1,0 +1,11 @@
+name = "Megacorp"
+localizable_name = "DLC_MEGACORP"
+archive = "dlc/dlc020_megacorp/dlc020.zip"
+steam_id = 944290
+rail_id = 0
+pops_id = "megacorp"
+affects_checksum = no
+affects_compatability = yes
+checksum = "5ae50c4a838e999363cc39ffdbe4fccd"
+third_party_content = no
+category = "expansion"

@@ -1,0 +1,11 @@
+name = "Creatures of the Void Portrait Pack"
+localizable_name = "DLC_CREATURES_OF_THE_VOID"
+archive = "dlc/dlc010_creatures_of_the_void/dlc010.zip"
+steam_id = 462720
+rail_id = 2000026
+pops_id = "creatures_of_the_void"
+affects_checksum = no
+affects_compatability = no
+checksum="a9c4a85e8a48d598166bb3fe44849073"
+third_party_content = no
+category="content_pack"
