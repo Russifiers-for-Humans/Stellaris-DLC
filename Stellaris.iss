@@ -4,14 +4,14 @@
 #define GameName "Stellaris"                                          ; Название игры
 #define GameNameDash "Stellaris"                                          ; Название игры
 #define GameNameEXE "stellaris"                                                              ; Название exe файла игры
-#define GameVer "3.4"                                                                     ; Версия игры
+#define GameVer "3.5"                                                                     ; Версия игры
 #define GameAppIdSteam "281990"                                                             ; Ид игры в стиме
 ; От ситуации зависит
 #define AppDescription "DLC для Stellaris"                                     ; Описание программы
 #define Typ "DLC"                                                                    ; Тип приложения
 ; Практически никогда не меняется
 #define AppVer "1"                                                                        ; Версия установщика
-#define Platz "D:\$RECYCLE.BIN\Bibliothek\Dokument\GitHub"                                                    ; Место
+#define Platz "C:\Users\TeMeR\Documents\GitHub"                                                    ; Место
 ; Константы
 #define Copyright "Folk"                                                                  ; (констант)Копирайт
 #define AppPublisher "Russifiers for Humans"                                              ; (констант)Название инициативы
@@ -77,6 +77,7 @@ SolidCompression=yes
 LZMAUseSeparateProcess=yes
 LZMADictionarySize=1048576
 LZMANumFastBytes=273
+ExtraDiskSpaceRequired=314572800
 //--------------------------------------Files--------------------------------------\\
 ;Путь к фалу Лицензии
 LicenseFile={#Location}\Licence.rtf
