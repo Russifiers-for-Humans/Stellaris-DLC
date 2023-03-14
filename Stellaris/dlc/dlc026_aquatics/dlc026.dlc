@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "dlc026_aquatics"
 affects_checksum = no
 affects_compatability = yes
-checksum = "dbcdbcc0cdb2eed7103ab261dc1f2dc6"
+zip_checksum = "052a83d9a042274db2a430bcf404b543"
 third_party_content = no
 category = "species_pack"

@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "dlc027_overlord"
 affects_checksum = no
 affects_compatability = yes
-checksum = "6946dcfba1243d8c38dc53fb064f586a"
+zip_checksum = "0d9c26593bace9ecac50a800b71e3739"
 third_party_content = no
 category = "expansion"

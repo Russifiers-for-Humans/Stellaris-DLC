@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "dlc023_federations"
 affects_checksum = no
 affects_compatability = yes
-checksum = "763269e38609b2ecb94837e2a9548452"
+zip_checksum = "6a927c4ebfd0c22ff88c5e605599382a"
 third_party_content = no
 category = "expansion"

@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "dlc025_nemesis"
 affects_checksum = no
 affects_compatability = yes
-checksum = "456698df52110c14f8abff486ed411d8"
+zip_checksum = "82e6368b380cf8faa600a05a331156fb"
 third_party_content = no
 category = "expansion"

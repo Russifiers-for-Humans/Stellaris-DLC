@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = ""
 affects_checksum = no
 affects_compatability = yes
-checksum = "b436c3ee052580a173bf3a8191e71f53"
+zip_checksum = "7699e928708446ed86000525c828cdd6"
 third_party_content = no
 category = "species_pack"

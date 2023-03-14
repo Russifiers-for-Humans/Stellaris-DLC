@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "dlc021_ancient_relics"
 affects_checksum = no
 affects_compatability = yes
-checksum = "a294a465f80e7fc14e45438144132846"
+zip_checksum = "9d46870b99acd19d324c0aebe5890d8a"
 third_party_content = no
 category = "story_pack"

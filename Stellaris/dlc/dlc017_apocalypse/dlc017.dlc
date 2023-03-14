@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "apocalypse"
 affects_checksum = no
 affects_compatability = yes
-checksum = "b243f85775eb41af621c61a55c7cb5b9"
+zip_checksum = "a41fc32a8760977e3951f56712d7e587"
 third_party_content = no
 category = "expansion"

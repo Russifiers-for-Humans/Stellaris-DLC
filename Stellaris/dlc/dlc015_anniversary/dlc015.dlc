@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "anniversary"
 affects_checksum = no
 affects_compatability = yes
-checksum = "9ac4b453e61bb77251f7077b0e73fda4"
+zip_checksum = "757f340d12a2b442df394a75b7dc57bd"
 third_party_content = no
 category = "content_pack"

@@ -7,6 +7,6 @@ rail_id = 2000028
 pops_id = "signup_bonus"
 affects_checksum = no
 affects_compatability = no
-checksum="f47f2b21bfb5c59f6ff1863b06609b63"
+zip_checksum = "554d79ba9d97cb0852d9b9d991a11292"
 third_party_content = no
 category="content_pack"

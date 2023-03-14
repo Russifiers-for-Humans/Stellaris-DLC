@@ -7,6 +7,6 @@ rail_id = 2000025
 pops_id = "arachnoid"
 affects_checksum = no
 affects_compatability = no
-checksum="02342fa4dce8db8478412f140709aac4"
+zip_checksum = "73d74d9907cf557ed378a98ce4b576e9"
 third_party_content = no
 category="content_pack"

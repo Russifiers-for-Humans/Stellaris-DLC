@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "humanoids"
 affects_checksum = no
 affects_compatability = yes
-checksum = "8d543e0c15dcccf65b08fa07a54f6d0f"
+zip_checksum = "db1b575507bbad52794cebc82ba021a2"
 third_party_content = no
 category = "species_pack"

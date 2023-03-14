@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "utopia"
 affects_checksum = no
 affects_compatability = yes
-checksum = "d77a755f9b21525be839387eebf42d6a"
+zip_checksum = "0abfc706c0e2df2b3a6c6751c3e6606a"
 third_party_content = no
 category = "expansion"

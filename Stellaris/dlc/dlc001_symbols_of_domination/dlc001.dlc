@@ -6,6 +6,6 @@ rail_id = 2000027
 pops_id = "symbols_of_domination"
 affects_checksum = no
 affects_compatability = no
-checksum="a06d70f82803b72da709a290e4c48024"
+zip_checksum = "d8a167246e554bbc904d9ce7b8a19f60"
 third_party_content = no
 category="content_pack"

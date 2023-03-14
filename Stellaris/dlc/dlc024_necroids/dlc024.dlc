@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "dlc024_necroids"
 affects_checksum = no
 affects_compatability = yes
-checksum = "0dd620b3857b65fd49e78cdbb39f1d7b"
+zip_checksum = "a776c3250af72944a355778b6e827dc6"
 third_party_content = no
 category = "species_pack"

@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "megacorp"
 affects_checksum = no
 affects_compatability = yes
-checksum = "5ae50c4a838e999363cc39ffdbe4fccd"
+zip_checksum = "513dd06a4e852210f1bf49cf67fc4199"
 third_party_content = no
 category = "expansion"

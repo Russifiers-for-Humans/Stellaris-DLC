@@ -6,6 +6,6 @@ rail_id = 2000029
 pops_id = "plantoid"
 affects_checksum = no
 affects_compatability = yes
-checksum="18237f05b202f471bd01a15aa6251fad"
+zip_checksum = "19482e819b13f47351a5cec58cd47cc9"
 third_party_content = no
 category="species_pack"

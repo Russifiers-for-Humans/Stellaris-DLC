@@ -6,6 +6,6 @@ rail_id = 0
 pops_id = "synthetic_dawn"
 affects_checksum = no
 affects_compatability = yes
-checksum = "9ec24632f36e94950611cf4eaa8b2e0e"
+zip_checksum = "3df385c8c5f8e2d6248e5f5c11205bf8"
 third_party_content = no
 category = "story_pack"
