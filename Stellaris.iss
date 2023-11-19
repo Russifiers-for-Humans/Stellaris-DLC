@@ -4,7 +4,7 @@
 #define GameName "Stellaris"                                          ; Название игры
 #define GameNameDash "Stellaris"                                          ; Название игры
 #define GameNameEXE "stellaris"                                                              ; Название exe файла игры
-#define GameVer "3.8.1"                                                                     ; Версия игры
+#define GameVer "3.10"                                                                     ; Версия игры
 #define GameAppIdSteam "281990"                                                             ; Ид игры в стиме
 ; От ситуации зависит
 #define AppDescription "DLC для Stellaris"                                     ; Описание программы
@@ -93,6 +93,7 @@ WizardSmallImageFile={#Location}\Pic.bmp
 
 [Components]
 Name: "crack"; Description: "Crack"; Flags: checkablealone; Types: full compact
+Name: "ringtone"; Description: "Ringtone"; Flags: checkablealone; Types: full
 Name: "soundtrack"; Description: "SoundTrack"; Flags: checkablealone; Types: full
 Name: "wallpaper"; Description: "Wallpaper"; Flags: checkablealone; Types: full
 Name: "dlc"; Description: "DLC";                                Flags: checkablealone; Types: full
@@ -127,18 +128,20 @@ Name: "dlc\027"; Description: "Overlord";               Flags: checkablealone; T
 Name: "dlc\028"; Description: "Toxoids Species Pack";               Flags: checkablealone; Types: full compact
 Name: "dlc\029"; Description: "First Contact Pack";               Flags: checkablealone; Types: full compact
 Name: "dlc\030"; Description: "Galactic Paragons";               Flags: checkablealone; Types: full compact
+Name: "dlc\031"; Description: "Astral Planes";               Flags: checkablealone; Types: full compact
 
 [Files]
 ; Ресурсы  ExternalSize - cmd dir
 Source: {#Location}\{#FolderUnArcivProg}\*; DestDir: "{tmp}"; Flags: deleteafterinstall
 Source: "{tmp}\crack.zip";                                  DestDir: "{tmp}"; Components: crack;   Flags: external deleteafterinstall; ExternalSize: 492267
 Source: "{tmp}\ebook.zip";                                  DestDir: "{tmp}"; Components: dlc\ebook;   Flags: external deleteafterinstall; ExternalSize: 106639355
+Source: "{tmp}\ringtone.zip";                                  DestDir: "{tmp}"; Components: ringtone;   Flags: external deleteafterinstall; ExternalSize: 1258916
 Source: "{tmp}\soundtrack.zip";                                  DestDir: "{tmp}"; Components: soundtrack;   Flags: external deleteafterinstall; ExternalSize:  1139956570
 Source: "{tmp}\wallpaper.zip";                                  DestDir: "{tmp}"; Components: wallpaper;   Flags: external deleteafterinstall; ExternalSize:  4679605
 Source: "{tmp}\dlc001_symbols_of_domination.zip";     DestDir: "{tmp}"; Components: dlc\001; Flags: external deleteafterinstall; ExternalSize: 77648
 Source: "{tmp}\dlc002_arachnoid.zip";             DestDir: "{tmp}"; Components: dlc\002; Flags: external deleteafterinstall; ExternalSize:  77556
 Source: "{tmp}\dlc003_signup_bonus.zip";       DestDir: "{tmp}"; Components: dlc\003; Flags: external deleteafterinstall; ExternalSize: 77589
-Source: "{tmp}\dlc004_plantoid.zip";    DestDir: "{tmp}"; Components: dlc\004; Flags: external deleteafterinstall; ExternalSize: 84997
+Source: "{tmp}\dlc004_plantoid.zip";    DestDir: "{tmp}"; Components: dlc\004; Flags: external deleteafterinstall; ExternalSize: 97864
 Source: "{tmp}\dlc005_novel.zip";        DestDir: "{tmp}"; Components: dlc\005; Flags: external deleteafterinstall; ExternalSize:  2145527
 
 Source: "{tmp}\dlc010_creatures_of_the_void.zip";              DestDir: "{tmp}"; Components: dlc\010; Flags: external deleteafterinstall; ExternalSize:  77662
@@ -149,11 +152,11 @@ Source: "{tmp}\dlc014_utopia.zip";                       DestDir: "{tmp}"; Compo
 Source: "{tmp}\dlc015_anniversary.zip";                         DestDir: "{tmp}"; Components: dlc\015; Flags: external deleteafterinstall; ExternalSize:  105118
 Source: "{tmp}\dlc016_synthetic_dawn.zip";             DestDir: "{tmp}"; Components: dlc\016; Flags: external deleteafterinstall; ExternalSize:  48643483
 Source: "{tmp}\dlc017_apocalypse.zip";            DestDir: "{tmp}"; Components: dlc\017; Flags: external deleteafterinstall; ExternalSize: 38027118
-Source: "{tmp}\dlc018_humanoids.zip";                    DestDir: "{tmp}"; Components: dlc\018; Flags: external deleteafterinstall; ExternalSize: 110718655
+Source: "{tmp}\dlc018_humanoids.zip";                    DestDir: "{tmp}"; Components: dlc\018; Flags: external deleteafterinstall; ExternalSize: 110735026
 Source: "{tmp}\dlc019_distant_stars.zip";               DestDir: "{tmp}"; Components: dlc\019; Flags: external deleteafterinstall; ExternalSize: 20572890
 Source: "{tmp}\dlc020_megacorp.zip";                DestDir: "{tmp}"; Components: dlc\020; Flags: external deleteafterinstall; ExternalSize:  123010057
 Source: "{tmp}\dlc021_ancient_relics.zip";                DestDir: "{tmp}"; Components: dlc\021; Flags: external deleteafterinstall; ExternalSize: 32766117
-Source: "{tmp}\dlc022_lithoids.zip";                DestDir: "{tmp}"; Components: dlc\022; Flags: external deleteafterinstall; ExternalSize: 53102950
+Source: "{tmp}\dlc022_lithoids.zip";                DestDir: "{tmp}"; Components: dlc\022; Flags: external deleteafterinstall; ExternalSize: 53106916
 Source: "{tmp}\dlc023_federations.zip";                DestDir: "{tmp}"; Components: dlc\023; Flags: external deleteafterinstall; ExternalSize:  14018751
 Source: "{tmp}\dlc024_necroids.zip";                DestDir: "{tmp}"; Components: dlc\024; Flags: external deleteafterinstall; ExternalSize:  49630704
 Source: "{tmp}\dlc025_nemesis.zip";                DestDir: "{tmp}"; Components: dlc\025; Flags: external deleteafterinstall; ExternalSize: 38704777
@@ -161,7 +164,8 @@ Source: "{tmp}\dlc026_aquatics.zip";                DestDir: "{tmp}"; Components
 Source: "{tmp}\dlc027_overlord.zip";                DestDir: "{tmp}"; Components: dlc\027; Flags: external deleteafterinstall; ExternalSize:  101498156
 Source: "{tmp}\dlc028_toxoids.zip";                DestDir: "{tmp}"; Components: dlc\028; Flags: external deleteafterinstall; ExternalSize:  41731770
 Source: "{tmp}\dlc029_firstcontact.zip";                DestDir: "{tmp}"; Components: dlc\029; Flags: external deleteafterinstall; ExternalSize:  92795
-Source: "{tmp}\dlc030_paragon.zip";                DestDir: "{tmp}"; Components: dlc\030; Flags: external deleteafterinstall; ExternalSize:  92555
+Source: "{tmp}\dlc030_paragon.zip";                DestDir: "{tmp}"; Components: dlc\030; Flags: external deleteafterinstall; ExternalSize:  92577
+Source: "{tmp}\dlc031_astral_planes.zip";                DestDir: "{tmp}"; Components: dlc\031; Flags: external deleteafterinstall; ExternalSize:  47153026
 
 [Icons]
 ;Ярлык
@@ -178,7 +182,8 @@ Name: "DesktopIcon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Run]
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\crack.zip -y -o""{app}\""";                                       Components: crack 
-Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\ebook.zip -y -o""{app}\""";                                       Components: dlc\ebook 
+Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\ebook.zip -y -o""{app}\""";                                       Components: dlc\ebook
+Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\ringtone.zip -y -o""{app}\""";                                       Components: ringtone  
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\soundtrack.zip -y -o""{app}\""";                                       Components: soundtrack 
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\wallpaper.zip -y -o""{app}\""";                                       Components: wallpaper 
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc001_symbols_of_domination.zip  -y -o""{app}\dlc\""";        Components: dlc\001
@@ -211,6 +216,7 @@ Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc027_overlord.zip  -y -
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc028_toxoids.zip  -y -o""{app}\dlc\""";        Components: dlc\028
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc029_firstcontact.zip  -y -o""{app}\dlc\""";        Components: dlc\029
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc030_paragon.zip  -y -o""{app}\dlc\""";        Components: dlc\030
+Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc031_astral_planes.zip  -y -o""{app}\dlc\""";        Components: dlc\031
 
 [UninstallDelete]
 Type: files; 		  Name: "{app}\cream_api.ini";                                   Components: crack  
@@ -226,6 +232,7 @@ Type: files; 		  Name: "{app}\Switcher Spacewar.exe";                           
 ;Type: files; 		  Name: "{app}\ScreamAPI.json";                                  Components: crack  
 Type: filesandordirs; Name: "{app}\soundtrack";      Components: soundtrack
 Type: filesandordirs; Name: "{app}\ebook";      Components: dlc\ebook
+Type: filesandordirs; Name: "{app}\ringtone";      Components: ringtone
 Type: filesandordirs; Name: "{app}\wallpaper";      Components: wallpaper
 Type: filesandordirs; Name: "{app}\dlc\dlc001_symbols_of_domination";      Components: dlc\001
 Type: filesandordirs; Name: "{app}\dlc\dlc002_arachnoid";              Components: dlc\002
@@ -257,6 +264,7 @@ Type: filesandordirs; Name: "{app}\dlc\dlc027_overlord";                 Compone
 Type: filesandordirs; Name: "{app}\dlc\dlc028_toxoids";                 Components: dlc\028
 Type: filesandordirs; Name: "{app}\dlc\dlc029_firstcontact";                 Components: dlc\029
 Type: filesandordirs; Name: "{app}\dlc\dlc030_paragon";                 Components: dlc\030
+Type: filesandordirs; Name: "{app}\dlc\dlc031_astral_planes";                 Components: dlc\031
 [Code]
 var
   InstallationPath: string;
@@ -305,13 +313,16 @@ begin
   if CurPageID = wpReady then begin
     DownloadPage.Clear;// sha256 7z
 	if IsComponentSelected('crack') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/crack.zip', 'crack.zip', '8d60794d42c529fb20bee9ae6705088c16a78361ea7638b1b85ff0528cd0faf7');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/crack.zip', 'crack.zip', 'a540c01621007cf79cd384f31b9e6e589d7cda27b18873664e4dbe2f5f627e84');
     end;
 	if IsComponentSelected('dlc\ebook') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/ebook.zip', 'ebook.zip', '446b963ada19176fb9e75f5298fd1e5819a983f486e74d7d69cb7afc8bf25026');
     end;
 	if IsComponentSelected('soundtrack') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/soundtrack.zip', 'soundtrack.zip', '116ee67edcaa1d563b57a2f19b908446afa23db4b1890600d8c779b7d577910e');
+    end;
+	if IsComponentSelected('ringtone') then begin
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/ringtone.zip', 'ringtone.zip', 'f9c3979a14919b5f96a60b3819a29019b43a402f9e561b8df2d141361e2d8f04');
     end;
   if IsComponentSelected('wallpaper') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/wallpaper.zip', 'wallpaper.zip', 'ee28b4520e085172768cba8bb3f0b8a55669d7f11e502f227f4b69bb0648c922');
@@ -326,7 +337,7 @@ begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc003_signup_bonus.zip', 'dlc003_signup_bonus.zip', '80268fb419fb85e86a90d79c0d44501915436bb792c24229039b2847c60b100d');
     end;
 	if IsComponentSelected('dlc/004') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc004_plantoid.zip', 'dlc004_plantoid.zip', '79fe6cdccd0eec16213d049cd8f8a36d565f420d2482b43c72358c2528a5c391');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/dlc004_plantoid.zip', 'dlc004_plantoid.zip', 'e2b63717aa857a4b3986b2e1177ee5efd414b10bf69dfc132f54afa84a41e391');
     end;
 	if IsComponentSelected('dlc/005') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc005_novel.zip', 'dlc005_novel.zip', '918fbeae87d43840f5faeb533683d4a07d578f0eb06b3483a0e62db53f21f9d9');
@@ -355,7 +366,7 @@ begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc017_apocalypse.zip', 'dlc017_apocalypse.zip', '1424b30d1da461023224ade675b820eb214c9f2af5c3feee7339a27031f88a7b');
     end;
 	if IsComponentSelected('dlc/018') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc018_humanoids.zip', 'dlc018_humanoids.zip', 'd4fd14d8c0e1a5ea6a6af1c50bd49701dedbcbab72687c385f67747d967c5a79');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/dlc018_humanoids.zip', 'dlc018_humanoids.zip', '52f4ef36f3aeb620baeeadc6035fbaeae2bbe7b60c69c3c89be4fc1f4404f194');
     end;
 	if IsComponentSelected('dlc/019') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc019_distant_stars.zip', 'dlc019_distant_stars.zip', '85994b6d0797bda32f4710535340808800f6a27dad20084f0cae17dfca337bc3');
@@ -367,7 +378,7 @@ begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc021_ancient_relics.zip', 'dlc021_ancient_relics.zip', '391500c07e024a65d3c4be1e990e4f5d00f3e22bebc791d5ee92a710addefc40');
     end;
   if IsComponentSelected('dlc/022') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc022_lithoids.zip', 'dlc022_lithoids.zip', '7f0b671127473a72d1c67cebe622a1ffd1f75fe251ec6d6b0131b3798620b2ab');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/dlc022_lithoids.zip', 'dlc022_lithoids.zip', 'a52ddc7048c2ece2ce535e437fb62834649994071538a07cd47a42222e4898c2');
     end;
   if IsComponentSelected('dlc/023') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc023_federations.zip', 'dlc023_federations.zip', '1a2e156ac10f9b67a0ae6f88e3c7ff4d5c2a409602c4000967a8465b7350d1b3');
@@ -391,7 +402,10 @@ begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc029_firstcontact.zip', 'dlc029_firstcontact.zip', '14d8e5338c06ee0aa1354e9e8613be62315a1d494c8a2ae7eb9012326c394191');
     end;
    if IsComponentSelected('dlc/030') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/dlc030_paragon.zip', 'dlc030_paragon.zip', '49e6043efa1d1951a325042713a5bac1eb52edf971a37cff5f9ae38febefe0d6');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/dlc030_paragon.zip', 'dlc030_paragon.zip', '7d1db1ad806cd893919ad5d6cfdd4431f267e1cc5297bb36d6a7845624798502');
+    end;
+   if IsComponentSelected('dlc/031') then begin
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.10/dlc031_astral_planes.zip', 'dlc031_astral_planes.zip', '10119a87cce3b1fd747bdde3bbc6cb2e4d240863785a01e34cce006a03090a46');
     end;
     DownloadPage.Show;
     try
