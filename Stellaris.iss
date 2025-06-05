@@ -4,7 +4,7 @@
 #define GameName "Stellaris"                                          ; Название игры
 #define GameNameDash "Stellaris"                                          ; Название игры
 #define GameNameEXE "stellaris"                                                              ; Название exe файла игры
-#define GameVer "3.13"                                                                     ; Версия игры
+#define GameVer "4.0"                                                                     ; Версия игры
 #define GameAppIdSteam "281990"                                                             ; Ид игры в стиме
 ; От ситуации зависит
 #define AppDescription "DLC для Stellaris"                                     ; Описание программы
@@ -133,6 +133,10 @@ Name: "dlc\032"; Description: "The Machine Age";               Flags: checkablea
 Name: "dlc\033"; Description: "Cosmic Storms";               Flags: checkablealone; Types: full compact
 Name: "dlc\034"; Description: "Grand Archive";               Flags: checkablealone; Types: full compact
 Name: "dlc\035"; Description: "Rick the Cube Species Portrait";               Flags: checkablealone; Types: full compact
+Name: "dlc\036"; Description: "BioGenesis";               Flags: checkablealone; Types: full compact
+;Name: "dlc\037"; Description: "";               Flags: checkablealone; Types: full compact
+;Name: "dlc\038"; Description: "";               Flags: checkablealone; Types: full compact
+Name: "dlc\039"; Description: "Stargazer Species Portrait";               Flags: checkablealone; Types: full compact
 
 [Files]
 ; Ресурсы  ExternalSize - cmd dir
@@ -174,6 +178,9 @@ Source: "{tmp}\dlc032_machine_age.zip";                DestDir: "{tmp}"; Compone
 Source: "{tmp}\dlc033_cosmic_storms.zip";                DestDir: "{tmp}"; Components: dlc\033; Flags: external deleteafterinstall; ExternalSize:  89757
 Source: "{tmp}\dlc034_grand_archive.zip";                DestDir: "{tmp}"; Components: dlc\034; Flags: external deleteafterinstall; ExternalSize:  32001
 Source: "{tmp}\dlc035_rick_the_cube.zip";                DestDir: "{tmp}"; Components: dlc\035; Flags: external deleteafterinstall; ExternalSize:  78582
+Source: "{tmp}\dlc036_biogenesis.zip";                DestDir: "{tmp}"; Components: dlc\036; Flags: external deleteafterinstall; ExternalSize:  89871898
+
+Source: "{tmp}\dlc039_stargazer.zip";                DestDir: "{tmp}"; Components: dlc\039; Flags: external deleteafterinstall; ExternalSize:  52629
 
 [Icons]
 ;Ярлык
@@ -229,6 +236,9 @@ Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc032_machine_age.zip  -
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc033_cosmic_storms.zip  -y -o""{app}\dlc\""";        Components: dlc\033
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc034_grand_archive.zip  -y -o""{app}\dlc\""";        Components: dlc\034
 Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc035_rick_the_cube.zip  -y -o""{app}\dlc\""";        Components: dlc\035
+Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc036_biogenesis.zip  -y -o""{app}\dlc\""";        Components: dlc\036
+
+Filename: "{tmp}\{#UnArcivProg}"; Parameters: "x {tmp}\dlc039_stargazer.zip  -y -o""{app}\dlc\""";        Components: dlc\039
 
 [UninstallDelete]
 Type: files; 		  Name: "{app}\cream_api.ini";                                   Components: crack  
@@ -281,6 +291,9 @@ Type: filesandordirs; Name: "{app}\dlc\dlc032_machine_age";                 Comp
 Type: filesandordirs; Name: "{app}\dlc\dlc033_cosmic_storms";                 Components: dlc\033
 Type: filesandordirs; Name: "{app}\dlc\dlc034_grand_archive";                 Components: dlc\034
 Type: filesandordirs; Name: "{app}\dlc\dlc035_rick_the_cube";                 Components: dlc\035
+Type: filesandordirs; Name: "{app}\dlc\dlc036_biogenesis";                 Components: dlc\036
+
+Type: filesandordirs; Name: "{app}\dlc\dlc039_stargazer";                 Components: dlc\039
 
 [Code]
 var
@@ -330,7 +343,7 @@ begin
   if CurPageID = wpReady then begin
     DownloadPage.Clear;// sha256 7z
 	if IsComponentSelected('crack') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.12/crack.zip', 'crack.zip', '1b7ac371eb6baae57a27f401d513b8e3f5dd4e7e51e3d9fec03d423b341783cb');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/4.0/crack.zip', 'crack.zip', '7bf4a83aa995ab1ae907308aa438453d5bac46d18d4b05b922bdeb986169d68b');
     end;
 	if IsComponentSelected('dlc\ebook') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.8.1/ebook.zip', 'ebook.zip', '446b963ada19176fb9e75f5298fd1e5819a983f486e74d7d69cb7afc8bf25026');
@@ -431,12 +444,17 @@ begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.13/dlc033_cosmic_storms.zip', 'dlc033_cosmic_storms.zip', 'b371c59a30a70410cff44bc2524f35be8d6e563c258b278ba7992bafd09ab047');
     end;
   if IsComponentSelected('dlc/034') then begin
-      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.14/dlc034_grand_archive.zip', 'dlc034_grand_archive.zip', 'e20b30f39d9de0fb68a44ffaf1fa14b40df19c19c6571fa7e15da8898b5925be');
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/4.0/dlc034_grand_archive.zip', 'dlc034_grand_archive.zip', '8c91696477fff796378e25681138ddba0208b885fb9474851bafb78e2d3a7c3d');
     end;
   if IsComponentSelected('dlc/035') then begin
       DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/3.13/dlc035_rick_the_cube.zip', 'dlc035_rick_the_cube.zip', 'fd8ea394296de2f98363e5bd5b91b95275c0d08b931484073e4cb9d28c142210');
     end;
-    
+  if IsComponentSelected('dlc/036') then begin
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/4.0/dlc036_biogenesis.zip', 'dlc036_biogenesis.zip', 'ce448c3b2af60c549e4bd6b6ea8c3bb47038bdb0afc651499c734a54ec6fb97b');
+    end;
+  if IsComponentSelected('dlc/039') then begin
+      DownloadPage.Add('https://github.com/Russifiers-for-Humans/Stellaris-DLC/releases/download/4.0/dlc039_stargazer.zip', 'dlc039_stargazer.zip', '5491aba26bb461d3b7e5e700db587fb9dbbea5f3f5c5659f264076287ef73283');
+    end;        
     DownloadPage.Show;
     try
       try
